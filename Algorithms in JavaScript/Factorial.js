@@ -11,3 +11,12 @@ function factorial(n) {
 
 //With arrow function
 const factorial = n => (n === 0 ? 1 : n * factorial(n - 1));
+
+//With recursive function
+function recursiveFunction (n) {
+    if(n > 0){
+      return n * recursiveFunction(n-1)
+    } else {
+      return 1;
+    }
+  }
