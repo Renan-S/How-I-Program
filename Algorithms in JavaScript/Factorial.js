@@ -9,9 +9,6 @@ function factorial(n) {
     return n;
 }
 
-//With arrow function
-const factorial = n => (n === 0 ? 1 : n * factorial(n - 1));
-
 //With recursive function
 function recursiveFunction (n) {
     if(n > 0){
@@ -20,3 +17,6 @@ function recursiveFunction (n) {
       return 1;
     }
   }
+
+//With recursive arrow function
+const factorial = n => (n === 0 ? 1 : n * factorial(n - 1));
